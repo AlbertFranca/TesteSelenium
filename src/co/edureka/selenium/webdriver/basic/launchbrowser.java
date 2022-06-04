@@ -58,9 +58,25 @@ public class launchbrowser {
 		Thread.sleep(2000);
 		
 		
+		//selecionando o livro
+		driver.findElement(By.partialLinkText("Filosofal")).click();		
+		Thread.sleep(2000);
+	
 	
 		
+		//selecionando tipo de livro
+		driver.findElement(By.cssSelector("#a-autoid-2-announce")).click();
+		Thread.sleep(5000);
+	
+		//adicionando ao carrinho
+		driver.findElement(By.cssSelector("#add-to-cart-button")).click();
+		Thread.sleep(6000);
+		
+		
+		driver.findElement(By.cssSelector("#sc-buy-box-ptc-button > span > input")).click();
+		Thread.sleep(6000);
+		
+		}
 
 	}
 
-}
